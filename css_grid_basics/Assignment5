@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Tokyo</title>
+
+    <style>
+        /* Basic Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #222;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        /* General Section Style */
+        .section {
+            padding: 60px 40px;
+            text-align: center;
+            color: #fff;
+            border-bottom: 4px solid rgba(255,255,255,0.2);
+        }
+
+        /* Parallax Backgrounds */
+        .bg1 {
+            background: url('https://images.unsplash.com/photo-1505205296326-2178af1b47bf')
+            center/cover fixed;
+        }
+
+        .bg2 {
+            background: url('https://images.unsplash.com/photo-1526481280695-3c720685208b')
+            center/cover fixed;
+        }
+
+        /* Gradients */
+        .linear {
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+        }
+
+        .radial {
+            background: radial-gradient(circle, #ff9863, #b81a34);
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome to Tokyo</h1>
+    <p>The City of Culture and Innovation</p>
+</header>
+
+<nav>
+    <a href="#history">History</a>
+    <a href="#culture">Culture</a>
+    <a href="#food">Food</a>
+    <a href="#places">Places</a>
+</nav>
+
+<main>
+
+    <section id="history" class="section bg1">
+        <h2>History</h2>
+        <p>Tokyo grew from a small town into one of the world’s leading cities.</p>
+    </section>
+
+    <section id="culture" class="section linear">
+        <h2>Culture</h2>
+        <p>A mix of ancient traditions and modern lifestyle.</p>
+    </section>
+
+    <section id="food" class="section bg2">
+        <h2>Food</h2>
+        <p>Known for sushi, ramen and unique street foods.</p>
+    </section>
+
+    <section id="places" class="section radial">
+        <h2>Places to Visit</h2>
+        <p>Tokyo Tower, Shibuya, Senso-ji Temple and more.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 Tokyo Info Page</p>
+</footer>
+
+</body>
+</html>
 
