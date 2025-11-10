@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <div class="box">Services</div>
+    <div class="box">Projects</div>
+    <div class="box">Contact</div>
+</main>
+
+<footer>
+    © 2025 My Homepage
+</footer>
+
+</body>
+</html>
+
+/* Basic layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background: #333;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around; /* evenly spaced links */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main section */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap; /* responsive balance */
+}
+
+.box {
+    background: #eee;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: rotate(2deg); /* hover rotation */
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%; /* full width */
+}
