@@ -1,4 +1,4 @@
-// Q2. String Manipulation Report
+// String Manipulation Report
 
 let productName = " wireless headphones PRO ";
 
@@ -12,8 +12,6 @@ for (let i = 0; i < words.length; i++) {
         words[i] = words[i][0].toUpperCase() + words[i].slice(1);
     }
 }
-
-// join 
 let finalTitle = words.join(" ");
 
 // replace "Pro" with "Pro Edition"
@@ -22,3 +20,4 @@ finalTitle = finalTitle.replace("Pro", "Pro Edition");
 // output
 console.log("Cleaned Title:", finalTitle);
 console.log("Title Length:", finalTitle.length);
+
