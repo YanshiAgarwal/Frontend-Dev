@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product List Manager</title>
+    <style>
+        ul { list-style: none; padding: 0; }
+        li { padding: 8px; background: #f2f2f2; margin: 5px 0; display: flex; justify-content: space-between; }
+        button { margin-left: 10px; }
+        input.editing { width: 60%; }
+    </style>
+</head>
+<body>
+
+<h2>Multi-Step Form</h2>
+
+<div id="step1" class="step">
+    <input id="name" placeholder="Enter name"><br><br>
+    <button id="next1">Next</button>
+</div>
+
+<div id="step2" class="step" style="display:none">
+    <input id="email" placeholder="Enter email"><br><br>
+    <button id="back1">Back</button>
+    <button id="next2">Next</button>
+</div>
+
+<div id="step3" class="step" style="display:none">
+    <input id="password" placeholder="Enter password" type="password"><br><br>
+    <button id="back2">Back</button>
+    <button id="finish">Finish</button>
+</div>
+
+<div id="summary" style="display:none">
+    <h3>Summary</h3>
+    <p id="output"></p>
+</div>
+
+<script src="que3.js"></script>
+    
+</body>
+</html>
